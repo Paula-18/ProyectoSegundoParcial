@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.Gorra"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" Height="450" Width="800">
+    <Grid x:Name="gridGorra">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top" Margin="25,104,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top" Margin="25,141,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Descripción:" VerticalAlignment="Top" Margin="25,178,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Color:" VerticalAlignment="Top" Margin="328,104,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Talla:" VerticalAlignment="Top" Margin="328,68,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Con bordado:" VerticalAlignment="Top" Margin="328,143,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top" Margin="328,32,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Cliente:" VerticalAlignment="Top" Margin="25,32,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fecha de entrega:" VerticalAlignment="Top" Margin="25,68,0,0"/>
+        <TextBox x:Name="tboxClienteG" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Margin="74,30,0,0" TextChanged="TboxClienteG_TextChanged"/>
+        <TextBox x:Name="tboxPrecioG" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Margin="74,102,0,0" TextChanged="TboxPrecioG_TextChanged"/>
+        <ComboBox x:Name="cbMarcaG" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256" Margin="380,31,0,0">
+            <ComboBoxItem>ICON</ComboBoxItem>
+            <ComboBoxItem>TRUCKER</ComboBoxItem>
+            <ComboBoxItem>KANGOL</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tboxDescuentoG" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Margin="94,139,0,0" TextChanged="TboxDescuentoG_TextChanged"/>
+        <TextBox x:Name="tboxGorraG" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Margin="25,199,0,0" TextChanged="TboxGorraG_TextChanged"/>
+        <CheckBox x:Name="checkBoxXS" Content="XS" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,68,0,0"/>
+        <CheckBox x:Name="checkBoxS" Content="S" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="434,68,0,0"/>
+        <CheckBox x:Name="checkBoxM" Content="M" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="488,68,0,0"/>
+        <CheckBox x:Name="checkBoxL" Content="L" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="545,68,0,0"/>
+        <CheckBox x:Name="checkBoxXL" Content="XL" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="605,68,0,0"/>
+        <TextBox x:Name="tboxColorG" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Margin="384,102,0,0" TextChanged="TboxColorG_TextChanged"/>
+        <RadioButton x:Name="rbSi" Content="SI" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="423,143,0,0"/>
+        <RadioButton x:Name="rbNo" Content="NO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="483,143,0,0"/>
+        <TextBox x:Name="tboxFechaG" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Margin="135,66,0,0" TextChanged="TboxFechaG_TextChanged"/>
+        <TextBlock x:Name="alerta" HorizontalAlignment="Left" TextWrapping="Wrap" Text="*Es necesario llenar todos los datos." VerticalAlignment="Top" Margin="25,241,0,0"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="551,235,0,0" Click="BtnGuardar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="406,235,0,0" Click="BtnCancelar_Click"/>
+
+    </Grid>
+</UserControl>
